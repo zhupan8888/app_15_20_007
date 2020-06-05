@@ -1,0 +1,47 @@
+#name: "lili" # 冒号必须是英文格式，每个冒号后必须跟空格
+#Name: "nana"
+#data: {"name":"lili", "pwd":"123"}
+
+#data1:
+#  name: "nana"
+#  pwd: "1234"
+#data2:
+#  - "lili"
+#  - "nama"
+
+#data3: ["123", "456"]
+#data4:
+#  - name: "lili"
+#  - pwd: "1133"
+
+#name: lili
+
+#bool1: true
+#bool2: false
+#bool3: True
+#bool4: False
+
+#int: 123
+#floatl: 12.0001
+#floatl1: 12.0000
+#floatl2: "12.0000"
+
+#data8: ~
+#data10:
+#data11: null
+#data12: Null
+#data9: None   # 不支持
+#data13: none     # 不支持
+
+#deat1: 2020-11-11 12:12:12
+#data2: 2020-06-05
+#data3: 11:24:20  # 不
+#data4: 2020-3-3   # 不支持
+
+data: &s
+  name: "lili"
+  pwd: "123456"
+
+deta1:
+  <<: *s
+  php: "10086"
